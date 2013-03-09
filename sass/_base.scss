@@ -1,0 +1,32 @@
+@import "compass";
+@import "compass/reset";
+@import "compass/utilities";
+
+
+
+@mixin background-cover{
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+}
+@mixin box-sizing{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@mixin text-color($color){
+    color: $color;
+}
+@mixin border-radius($radius){
+    border-radius: $radius;
+}
+@mixin border($border-value, $color){
+    border: $border-value;
+    border-color: $color;
+}
+@mixin text-shadow($value, $value, $value, $value, $value, $value, $value, $value, $value){
+    text-shadow: $value;
+}
