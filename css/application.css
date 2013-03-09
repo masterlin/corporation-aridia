@@ -45,16 +45,6 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 24px;
-  margin: 0 0 30px 0;
-  font-family: "Marcellus SC", "Helvetica", "Arial", sans-serif; }
-
 /******************************************************
 ***** STYLES GENERAUX *****
 *******************************************************/
@@ -94,12 +84,12 @@ body {
 .menu {
   border: 2px solid;
   border-color: #7c5304;
-  height: 600px;
+  height: 450px;
   width: 300px;
   font-size: 25px;
   font-family: "Tauri", sans-serif;
   float: left;
-  background: rgba(73, 22, 14, 0.8); }
+  background: rgba(73, 22, 14, 0.63); }
   .menu .logo-empire {
     background: url(../img/logo_sith_empire.png) no-repeat;
     position: relative;
@@ -109,7 +99,7 @@ body {
     height: 68px;
     width: 70px; }
   .menu li {
-    margin: 30px 0 0 40px; }
+    margin: 10px 0 0 40px; }
     .menu li a, .menu li a:hover, .menu li a:focus {
       background: -webkit-linear-gradient(#f8dd6d, #dbac43);
       -webkit-background-clip: text;
@@ -136,7 +126,7 @@ body {
   height: 100%;
   margin: 0 0 30px 30px;
   color: #F8DD6D;
-  background: url(../img/contenu-bg.png) no-repeat rgba(73, 22, 14, 0.83);
+  background: url(../img/contenu-bg.png) no-repeat rgba(73, 22, 14, 0.63);
   padding: 30px; }
   .contenu p {
     line-height: 20px;
@@ -148,8 +138,6 @@ body {
     left: -50px;
     height: 34px;
     width: 95px; }
-  .contenu .titre-news {
-    text-align: center; }
 
 /********** PIED DE PAGE **********/
 footer {
@@ -190,22 +178,8 @@ footer {
         opacity: 1;
         color: #fff; }
   footer .copy {
-    width: 850px;
+    width: 800px;
     margin: 0 auto; }
     footer .copy a {
       text-decoration: none;
       color: lightgray; }
-  footer .footer-links {
-    width: 800px;
-    margin: 30px auto; }
-    footer .footer-links a {
-      text-decoration: none;
-      color: #F8DD6D;
-      font-family: "Marcellus SC", sans-serif;
-      -moz-transition: 500ms ease-in-out;
-      -webkit-transition: 500ms ease-in-out;
-      -o-transition: 500ms ease-in-out;
-      transition: 500ms ease-in-out; }
-      footer .footer-links a:hover {
-        color: #fff;
-        text-shadow: -1px 1px 8px #ffffcc, 1px -1px 8px white; }
