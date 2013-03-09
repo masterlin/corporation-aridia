@@ -34,12 +34,12 @@ body{
 /**** MENU *****/
 .menu{
 	@include border(2px solid, #7c5304);
-	height: 450px;
+	height: 600px;
 	width: 300px;
 	font-size: 25px;
 	font-family: "Tauri", sans-serif;
 	float: left;
-	background: rgba(73, 22, 14, 0.63);
+	background: rgba(73, 22, 14, 0.80);
 	.logo-empire{
 		background: url(../img/logo_sith_empire.png) no-repeat;
 		position: relative;
@@ -50,7 +50,7 @@ body{
 		width: 70px;
 	}
 	li{
-		margin: 10px 0 0 40px;
+		margin: 30px 0 0 40px;
 		a, a:hover, a:focus{
 			background: -webkit-linear-gradient(#F8DD6D, #dbac43);
 			-webkit-background-clip: text;
@@ -85,7 +85,7 @@ body{
 	height: 100%;
 	margin: 0 0 30px 30px;
 	color: #F8DD6D;
-	background: url(../img/contenu-bg.png) no-repeat rgba(73, 22, 14, 0.63);
+	background: url(../img/contenu-bg.png) no-repeat rgba(73, 22, 14, 0.83);
 
 	padding: 30px;
 	p{
@@ -100,6 +100,9 @@ body{
 		left: -50px;
 		height: 34px;
 		width: 95px;
+	}
+	.titre-news{
+		text-align: center;
 	}
 
 }
@@ -150,13 +153,29 @@ footer{
 		}
 	}
 	.copy{
-		width: 800px;
+		width: 850px;
 		margin: 0 auto;
 		a{
 			text-decoration: none;
 			color: lightgray;
 		}
 
+	}
+	.footer-links{
+
+		width: 800px;
+		margin: 30px auto;
+		a{
+			text-decoration: none;
+			color: #F8DD6D;
+			font-family: "Marcellus SC", sans-serif;
+			@include transition(500ms, ease-in-out);
+			&:hover{
+				color: #fff;
+				text-shadow:-1px 1px 8px #ffc, 1px -1px 8px #fff;
+			}
+
+		}
 	}
 
 

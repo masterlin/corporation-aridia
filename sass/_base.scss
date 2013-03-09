@@ -2,7 +2,16 @@
 @import "compass/reset";
 @import "compass/utilities";
 
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-size: 24px;
+    margin: 0 0 30px 0;
+    font-family: "Marcellus SC", "Helvetica", "Arial", sans-serif;
+}
 
 @mixin background-cover{
 	-webkit-background-size: cover;
@@ -27,6 +36,9 @@
     border: $border-value;
     border-color: $color;
 }
-@mixin text-shadow($value, $value, $value, $value, $value, $value, $value, $value, $value){
-    text-shadow: $value;
+@mixin transition($transition-duration, $transition-property){
+    -moz-transition: $transition-duration $transition-property;
+    -webkit-transition: $transition-duration $transition-property;
+    -o-transition: $transition-duration $transition-property;
+    transition: $transition-duration $transition-property;
 }
